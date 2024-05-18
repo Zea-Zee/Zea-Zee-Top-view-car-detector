@@ -1,4 +1,4 @@
 credentials.json
-/venv/
+/.venv/
 /yolov5/
 /yolovenv/
