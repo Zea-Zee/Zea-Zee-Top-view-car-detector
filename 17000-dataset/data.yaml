@@ -1,6 +1,5 @@
-train: ../17000-dataset/train/images
-val: ../17000-dataset/valid/images
-test: ../17000-dataset/test/images
+train: ../train/images
+val: ../valid/images
 
 nc: 1
 names: ['vehicle']
