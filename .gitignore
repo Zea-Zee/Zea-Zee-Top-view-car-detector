@@ -2,3 +2,4 @@ credentials.json
 /.venv/
 /yolov5/
 /yolovenv/
+/.vscode/

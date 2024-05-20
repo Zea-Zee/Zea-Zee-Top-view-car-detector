@@ -1,7 +1,0 @@
-path: "C:\Users\kuzga\Downloads\big-dataset"
-train: train/images
-train: test/images
-val: valid/images
-
-nc: 1
-names: ['vehicle']
