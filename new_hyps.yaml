@@ -6,11 +6,11 @@ warmup_epochs: 3.0
 warmup_momentum: 0.8
 warmup_bias_lr: 0.1
 box: 0.05
-cls: 0.5
+cls: 0.3
 cls_pw: 1.0
-obj: 1.0
+obj: 0.5
 obj_pw: 1.0
-iou_t: 0.2
+iou_t: 0.7
 anchor_t: 4.0
 anchors: 3
 
