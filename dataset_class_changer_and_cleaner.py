@@ -2,14 +2,10 @@ import os
 import argparse
 
 def process_files_in_directory(start_dir):
-    # Директории с файлами
     labels_dir = os.path.join(start_dir, 'labels')
     images_dir = os.path.join(start_dir, 'images')
 
-    # Список пустых файлов
     empty_files = []
-
-    # Проход по файлам в директории labels
     for file_name in os.listdir(labels_dir):
         file_path = os.path.join(labels_dir, file_name)
 
@@ -17,12 +13,10 @@ def process_files_in_directory(start_dir):
             with open(file_path, 'r') as file:
                 lines = file.readlines()
 
-            # Если файл пустой, запоминаем его
             if not lines:
                 empty_files.append(file_name)
                 continue
 
-            # Обработка строк
             modified_lines = []
             for line in lines:
                 if line.startswith('1'):
@@ -31,17 +25,12 @@ def process_files_in_directory(start_dir):
                 else:
                     modified_lines.append(line)
 
-            # Запись изменений обратно в файл
             with open(file_path, 'w') as file:
                 file.writelines(modified_lines)
 
-    # Удаление пустых файлов и соответствующих изображений
     for empty_file in empty_files:
-        # Удаляем файл из директории labels
         os.remove(os.path.join(labels_dir, empty_file))
         print(f"Deleted empty file: {empty_file} from {labels_dir}")
-
-        # Имя соответствующего файла в images (без расширения .txt)
         base_name = os.path.splitext(empty_file)[0]
 
         # Поиск и удаление соответствующего файла в images
