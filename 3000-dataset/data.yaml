@@ -1,5 +1,0 @@
-train: ../3000-dataset/train/images
-val: ../3000-dataset/valid/images
-
-nc: 1
-names: ['vehicle']

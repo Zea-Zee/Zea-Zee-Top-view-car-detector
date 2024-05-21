@@ -3,3 +3,5 @@ credentials.json
 /yolov5/
 /yolovenv/
 /.vscode/
+
+*cache*
