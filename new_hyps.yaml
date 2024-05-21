@@ -14,17 +14,17 @@ iou_t: 0.7
 anchor_t: 4.0
 anchors: 3
 
-fl_gamma: 0.0 ???
+fl_gamma:       # 0.0 ???
 hsv_h: 0.2
-hsv_s: 0.5      change
-hsv_v: 0.2      change
-degrees: 90     change (may be 0?)
-translate: 0.1 не спрашивал
-scale: 0.1      меньше сделать или убрать
-shear: 0.0      не спрашивал
-perspective: 0.001  меньше или убрать
+hsv_s: 0.5      # change
+hsv_v: 0.2      # change
+degrees: 90     # change (may be 0?)
+translate: 0.1  # не спрашивал
+scale: 0.1      # меньше сделать или убрать
+shear: 0.0      # не спрашивал
+perspective: 0.001  # меньше или убрать
 flipud: 0.5
 fliplr: 0.5
 mosaic: 1
-mixup: 0.0      спросить хз
+mixup: 0.0      # спросить хз
 copy_paste: 0.5
